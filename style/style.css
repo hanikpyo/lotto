@@ -1,0 +1,431 @@
+body {
+    background-color: #F7F7F7;
+}
+/*header*/
+.web-header {
+    display: inline-block;
+    width: 100%;
+    background: white;
+}
+.menubar {
+    float: left;
+    width: 10%;
+
+}
+input[id='menuicon'] {
+    display: none;
+}
+input[id='menuicon'] + label {
+    display: block;
+    width: 3rem;
+    height: 2.5rem;
+    position: relative;
+    left: 0;
+    top: 1.5rem;
+    transition: all 0.35s;
+    cursor: pointer;
+	margin-top:-0.9rem;
+}
+input[id='menuicon']:checked + label {
+    z-index: 2;
+}
+input[id='menuicon'] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 0.8rem;
+    background: #000;
+    transition: all 0.35s;
+    margin-left: 0.8rem;
+}
+input[id='menuicon'] + label span:nth-child(1) {
+    top: 0;
+}
+input[id='menuicon'] + label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[id='menuicon'] + label span:nth-child(3) {
+    bottom: 0;
+}
+input[id='menuicon']:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id='menuicon']:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+input[id='menuicon']:checked + label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+div[class='sidebar'] {
+    width: 18rem;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: -18rem;
+    z-index: 1;
+    transition: all 0.35s;
+}
+input[id='menuicon']:checked + label + div {
+    left: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+li {
+    padding-left: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+a {
+    text-decoration: none;
+    font-family: 'UhBeemysen';
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+    color: black;
+    font-weight: lighter;
+}
+a:hover {
+    text-decoration: none;
+}
+.menu {
+    margin-top: 4rem;
+}
+.logo {
+    float: left;
+    width: 10%;
+	margin-top:-1rem;
+}
+.logo-img {
+    width: 2rem;
+    height: 3rem;
+}
+.header-title {
+    float: left;
+    width: 60%;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: -1.5rem;
+	margin-bottom:-1.4rem;
+    font-family: 'UhBeemysen';
+    color: goldenrod;
+}
+/*header-end*/
+
+/*title*/
+.header {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px silver;
+    color: black;
+    font-family: 'InkLipquid';
+    margin-top: 2rem;
+}
+.int-header {
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'InkLipquid';
+    text-shadow: 1px 1px 1px silver;
+    color: black;
+    margin-top: 5rem;
+} /*index-title*/
+/*title-end*/
+
+/*lotto*/
+.gen-box {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
+/*lotto-end*/
+
+/*lotto-ball*/
+.number {
+    display: inline-block;
+    background: orange;
+    color: white;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    line-height: 8rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+.numset {
+    text-align: center;
+    padding: 10px;
+}
+/*lotto-ball-end*/
+
+/*pension*/
+.gen-box2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    color: darkgoldenrod;
+    font-family: 'fromdamiM';
+    width: 9rem;
+}
+/*pension-end*/
+
+/*dream*/
+.d-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10%;
+}
+.img-d {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 10%;
+	margin-left:-0.25rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8rem;
+}
+/*dream-end*/
+
+/*result-lotto*/
+.result-lotto {
+    background: #227dbd;
+}
+.win-lotto {
+    color: white;
+    width: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+div.win-lotto span {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.win-lotto span:nth-child(2) {
+    background: #fbc400; /*로또 10번대 금색*/
+    text-shadow: 0px 0px 3px rgba(73, 57, 0, 0.8);
+}
+.win-lotto span:nth-child(3) {
+    background: #fbc400;
+    text-shadow: 0px 0px 3px rgba(73, 57, 0, 0.8);
+}
+.win-lotto span:nth-child(4) {
+    background: #ff7272; /*로또 20번대 핑크색*/
+    text-shadow: 0px 0px 3px rgba(64, 0, 0, 0.8);
+}
+.win-lotto span:nth-child(5) {
+    background: #aaa; /*로또 30번대 회색*/
+    text-shadow: 0px 0px 3px rgba(61, 61, 61, 0.8);
+}
+.win-lotto span:nth-child(6) {
+    background: #aaa; /*로또 30번대 회색*/
+    text-shadow: 0px 0px 3px rgba(61, 61, 61, 0.8);
+}
+.win-lotto span:nth-child(7) {
+    background: #b0d840; /*로또 40번대 연두색*/
+    text-shadow: 0px 0px 3px rgba(41, 56, 0, 0.8);
+}
+.win-lotto span:nth-child(8) {
+    background: none;
+}
+.win-lotto span:nth-child(9) {
+    background: #ff7272; /*로또 20번대 핑크색*/
+    text-shadow: 0px 0px 3px rgba(64, 0, 0, 0.8);
+}
+/*result-lotto-end*/
+
+/*result-pension*/
+.result-pension {
+    background: #2c6c9b;
+}
+.no-pension {
+    color: white;
+    width: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+.win-pension {
+    color: black;
+    width: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+.pension-first {
+    float: left;
+    width: 30%;
+    margin-right: -30%;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+div.win-pension span {
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background: white;
+    line-height: 1.25;
+}
+.win-pension span:nth-child(2) {
+    border: 0.2rem solid #c7c7c7; /*연금복권 조 은색*/
+}
+.win-pension span:nth-child(3) {
+    background: none;
+    color: white;
+}
+.win-pension span:nth-child(4) {
+    border: 0.2rem solid #ff4c4c; /*연금복권 첫번호 빨간색*/
+}
+.win-pension span:nth-child(5) {
+    border: 0.2rem solid #ff8e4f; /*연금복권 두번째번호 주황색*/
+}
+.win-pension span:nth-child(6) {
+    border: 0.2rem solid #fcd153; /*연금복권 세번째번호 노란색*/
+}
+.win-pension span:nth-child(7) {
+    border: 0.2rem solid #3cbcff; /*연금복권 네번째번호 하늘색*/
+}
+.win-pension span:nth-child(8) {
+    border: 0.2rem solid #8d70da; /*연금복권 다섯번째번호 연보라색*/
+}
+.win-pension span:nth-child(9) {
+    border: 0.2rem solid #777777; /*연금복권 여섯번째번호 회색*/
+}
+.sec-pension {
+    color: black;
+    width: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+div.sec-pension span {
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background: white;
+    line-height: 1.25;
+}
+.sec-pension span:nth-child(4) {
+    border: 0.2rem solid #ff4c4c;
+}
+.sec-pension span:nth-child(5) {
+    border: 0.2rem solid #ff8e4f;
+}
+.sec-pension span:nth-child(6) {
+    border: 0.2rem solid #fcd153;
+}
+.sec-pension span:nth-child(7) {
+    border: 0.2rem solid #3cbcff;
+}
+.sec-pension span:nth-child(8) {
+    border: 0.2rem solid #8d70da;
+}
+.sec-pension span:nth-child(9) {
+    border: 0.2rem solid #777777;
+}
+.pension-second {
+    float: left;
+    width: 30%;
+    margin-right: -30%;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+/*result-pension-end*/
+
+/* 로또 색깔 모음
+로또 10번대 금색 #fbc400
+로또 20번대 핑크색 #ff7272
+로또 30번대 회색 #aaa
+로또 40번대 연두색 #b0d840
+*/
+
+/*font-family*/
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fromdamiM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UhBeemysen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeemysen.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/*font-family-end*/
+
+/*responsive*/
+/* Desktop Device */
+@media all and (min-width:1025px) {
+	html {
+		font-size: 16px;
+	}
+}
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+    html {
+        font-size: 7px;
+    }
+}
+/*responsive-end*/
