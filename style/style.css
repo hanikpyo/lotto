@@ -366,6 +366,11 @@ div.sec-pension span {
 }
 /*result-pension-end*/
 
+/*footer*/
+.footer {
+	margin-top: 5rem;
+	border-top: 0.1rem solid black;
+}
 
 /*font-family*/
 @font-face {
