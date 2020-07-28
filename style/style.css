@@ -139,7 +139,7 @@ a:hover {
 .gen-box {
     display: inline-block;
     text-align: center;
-    margin: 0 auto;
+    margin: 5rem auto;
     width: 100%;
     font-size: 1.3rem;
     border-radius: 1rem;
@@ -170,7 +170,7 @@ a:hover {
 .gen-box2 {
     display: inline-block;
     text-align: center;
-    margin: 0 auto;
+    margin: 5rem auto;
     font-size: 1.3rem;
     border-radius: 1rem;
     color: darkgoldenrod;
@@ -368,7 +368,7 @@ div.sec-pension span {
 
 /*footer*/
 .footer {
-	margin-top: 5rem;
+
 	border-top: 0.1rem solid black;
 }
 .footer-ad {
