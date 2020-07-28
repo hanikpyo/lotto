@@ -371,7 +371,18 @@ div.sec-pension span {
 	margin-top: 5rem;
 	border-top: 0.1rem solid black;
 }
-
+.footer-ad {
+	width:320px;
+	margin: 0.5rem auto;
+}
+.footer-ad-sec {
+	width:320px;
+	margin: 0 auto;
+}
+.footer-ad-third {
+	width:320px;
+	margin: 0 auto;
+}
 /*font-family*/
 @font-face {
     font-family: 'ImcreSoojin';
