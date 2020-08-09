@@ -21,11 +21,11 @@ input[id='menuicon'] + label {
     width: 3rem;
     height: 2.5rem;
     position: relative;
-    right: -3rem;
     top: 1.8rem;
     transition: all 0.35s;
     cursor: pointer;
 	margin-top:-0.9rem;
+	right:-3rem;
 }
 input[id='menuicon']:checked + label {
     z-index: 2;
@@ -62,7 +62,7 @@ input[id='menuicon']:checked + label span:nth-child(3) {
 }
 div[class='sidebar'] {
     width: 18rem;
-    height: 30%;
+    height: 40rem;
     background: white;
     position: fixed;
     top: 0;
