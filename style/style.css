@@ -381,6 +381,20 @@ div.sec-pension span {
 	width:320px;
 	margin: 0 auto;
 }
+.footer-ad-forth {
+	width:250px;
+	margin: 0 auto;
+} 
+.footer-ad-fifth {
+	width:300px;
+	margin: 0 auto;
+} 
+.footer-ad-side-right {
+	width:160px;
+	height:600px;
+	float:right;
+	display:inline-block;
+}
 /*font-family*/
 @font-face {
     font-family: 'ImcreSoojin';
