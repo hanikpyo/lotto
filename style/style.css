@@ -372,6 +372,11 @@ div.sec-pension span {
 .coupang {
 	margin:0 auto;
 	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	grid-gap:1rem;
+	padding:1rem;
 }
 .footer-ad {
 	width:320px;
