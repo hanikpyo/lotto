@@ -1,17 +1,18 @@
-body {
-    background-color: #F7F7F7;
-}
+
 /*header*/
 .web-header {
-    display: inline-block;
+    display: flex;
     width: 100%;
     background: white;
-	height: 4rem;
+	height: 6rem;
+	grid-gap:3rem;
+	align-content:space-around;
 }
 .menubar {
-    float: right;
-    width: 10%;
-
+	align-self:center;
+	margin:0 auto;
+	width:10%;
+	text-align:center;
 }
 input[id='menuicon'] {
     display: none;
@@ -21,11 +22,9 @@ input[id='menuicon'] + label {
     width: 3rem;
     height: 2.5rem;
     position: relative;
-    top: 1.8rem;
     transition: all 0.35s;
     cursor: pointer;
-	margin-top:-0.9rem;
-	right:-2rem;
+	margin:0 auto;
 }
 input[id='menuicon']:checked + label {
     z-index: 2;
@@ -61,16 +60,15 @@ input[id='menuicon']:checked + label span:nth-child(3) {
     transform: translateY(50%) rotate(-45deg);
 }
 div[class='sidebar'] {
-    width: 18rem;
-    height: 40rem;
+    width: 15rem;
+    height: 100%;
     background: white;
     position: fixed;
     top: 0;
     right: -18rem;
     z-index: 1;
     transition: all 0.35s;
-	border:0.1rem solid black;
-	border-radius:1rem;
+	border-left:0.1rem solid black;
 }
 input[id='menuicon']:checked + label + div {
     right: 0;
@@ -80,8 +78,9 @@ ul {
     padding-left: 0px;
 }
 li {
-    padding-left: 2.5rem;
     margin-bottom: 1.25rem;
+	float:left;
+	width:100%;
 }
 a {
     text-decoration: none;
@@ -95,29 +94,27 @@ a:hover {
     text-decoration: none;
 }
 .menu {
-    margin-top: 4rem;
+    margin-top: 6rem;
 	   font-size: 5rem;
 }
 .logo {
-    float: left;
-    width: 10%;
-margin-top: 0.5rem;
-	margin-left:2rem;
+	align-self:center;
+	margin:0 auto;
+	width:10%;
+	text-align:center;
 }
 .logo-img {
     width: 2rem;
     height: 3rem;
 }
 .header-title {
-	position:relative;
-    float: left;
-	width: 70%;
-	margin-left:3rem;
-    text-align: center;
+	align-self:center;
     font-size: 4rem;
-	margin-top:-0.5rem;
     font-family: 'ImcreSoojin';
     color: goldenrod;
+	width:80%;
+	margin:0 auto;
+	text-align:center;
 }
 /*header-end*/
 
@@ -128,7 +125,7 @@ margin-top: 0.5rem;
     text-shadow: 1px 1px 1px silver;
     color: black;
     font-family: 'InkLipquid';
-    margin-top: 2rem;
+	border-top:0.1rem solid silver;
 }
 
 /*title-end*/
@@ -173,7 +170,7 @@ margin-top: 0.5rem;
     border-radius: 1rem;
     color: darkgoldenrod;
     font-family: 'fromdamiM';
-    width: 10rem;
+    width: 12rem;
 }
 /*pension-end*/
 
