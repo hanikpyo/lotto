@@ -256,6 +256,8 @@ div.win-lotto span {
 /*result-pension*/
 .result-pension {
     background: #2c6c9b;
+	display:flex;
+	flex-direction:column;
 }
 .no-pension {
     color: white;
@@ -265,6 +267,7 @@ div.win-lotto span {
     font-size: 1.8rem;
     text-align: center;
     overflow: hidden;
+	grid-column:1/4;
 }
 .win-pension {
     color: black;
@@ -274,14 +277,17 @@ div.win-lotto span {
     font-size: 1.8rem;
     text-align: center;
     overflow: hidden;
+	margin:0 auto;
+	grid-column:1/4;
+	align-self:center;
 }
 .pension-first {
     float: left;
-    width: 30%;
-    margin-right: -30%;
+    width: 50%;
     color: white;
     font-size: 1.5rem;
     margin-top: 0.3rem;
+	margin-right: -10%;
 }
 div.win-pension span {
     display: inline-block;
@@ -353,8 +359,8 @@ div.sec-pension span {
 }
 .pension-second {
     float: left;
-    width: 30%;
-    margin-right: -30%;
+    width: 50%;
+    margin-right: -10%;
     color: white;
     font-size: 1.5rem;
     margin-top: 0.3rem;
